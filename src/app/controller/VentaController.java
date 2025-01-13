@@ -86,7 +86,7 @@ public class VentaController {
 		Venta[] ventas = venta;
 		Articulo articulo;
 		
-		boolean subirVenta = venta.getArticuloId(id);
+		boolean subirVenta = venta.getArticuloId();
 		/* TO-DO: Si existe la venta, actualizamos el stock con Articulo.subirStock y registramos la devolución 
 		          La devolución es una nueva venta del mismo artículo pero con cantidad negativa*/
 		

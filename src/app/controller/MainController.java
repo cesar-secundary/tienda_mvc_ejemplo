@@ -41,12 +41,12 @@ public class MainController {
 						break;
 					case "3":
 						// 3- Introducir artículo
-						Articulo articulo = ArticuloView.solicitarArticulo();
+						Articulo articulo = ArticuloView.solicitarArticulo(articulo);
 						articuloController.introducirArticulo(articulo);
 						break;
 					case "4":
 						// 5- Modificar artículo
-						articulo = ArticuloView.solicitarArticulo();
+						articulo = ArticuloView.solicitarArticulo(articulo);
 						articuloController.modificarArticulo(articulo);
 						break;
 					case "5":
@@ -56,6 +56,8 @@ public class MainController {
 					case "6":
 						// 6- Devolución
 						// TO-DO
+						
+						ventaController.hacerDevolucion(0);
 	
 					case "7":
 						// 7- Ver ventas
@@ -64,6 +66,8 @@ public class MainController {
 					case "8":
 						// 8- Buscar ventas por articulo
 						// TO-DO
+						
+						ventaController.buscarVentasPorArticulo(0);
 						
 					default:
 						MainView.mostrarMensaje("Opción no válida");

@@ -23,7 +23,7 @@ public class TiendaApp {
 		ArticuloDAO articuloDAO = new ArticuloDAO(articulos);
 		VentaDAO ventaDAO = new VentaDAO(venta);
 		ArticuloController articuloController = new ArticuloController(articuloDAO);
-		VentaController ventaController = new VentaController(ventaDAO, articuloDAO,articuloController);
+		VentaController ventaController = new VentaController(ventaDAO, articuloDAO,articuloController, venta);
 		MainController mainController = new MainController(articuloController, ventaController);
 		
 		// Manejar las peticiones del usuario
